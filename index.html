@@ -1,20 +1,94 @@
-<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#080a0d"><title>Corujão Notícias PB — Local</title><link rel="icon" href="assets/img/logo.png"><link rel="stylesheet" href="assets/css/style.css"></head><body>
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#080a0d">
+  <meta name="description" content="Corujão Notícias PB — informação em tempo real na Paraíba.">
+  <meta property="og:title" content="Corujão Notícias PB">
+  <meta property="og:description" content="Informação em tempo real na Paraíba.">
+  <meta property="og:image" content="assets/img/logo.png">
+  <title>Corujão Notícias PB — Informação em tempo real</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="assets/img/logo.png">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div class="topbar"><div class="wrap"><div id="today">Corujão Notícias PB</div><div class="right">Instagram • YouTube • Facebook</div></div></div>
+  <header class="brandbar"><div class="wrap">
+    <a class="brand" href="index.html"><img src="assets/img/logo.png" alt="Corujão Notícias PB"><div><div class="brand-title">@CORUJAO<span>NOTICIASPB</span></div><div class="brand-tag">Informação em tempo real</div></div></a>
+    <div class="slogan">NOTÍCIA NÃO DORME.<br><strong>A GENTE TAMBÉM NÃO.</strong></div>
+    <form class="search" id="searchForm"><input id="searchInput" placeholder="O que você procura?"><button aria-label="Pesquisar">⌕</button></form>
+  </div></header>
+  <nav class="nav"><div class="wrap">
+    <button class="menu-btn" id="menuBtn">☰</button>
+    <div class="navlinks" id="navLinks">
+      <a class="active" href="index.html">Início</a>
+      <a href="index.html?categoria=Pol%C3%ADcia">Polícia</a>
+      <a href="#agora">Ocorrências</a>
+      <a href="index.html?categoria=Cidades">Cidades</a>
+      <a href="index.html?categoria=Bairros">Bairros</a>
+      <a href="index.html?categoria=Pol%C3%ADtica">Política</a>
+      <a href="index.html?categoria=Esportes">Esportes</a>
+      <a href="#rodape">Contato</a>
+    </div>
+  </div></nav>
 
-<div class="topbar"><div class="wrap"><div id="today">Corujão Notícias PB</div><div class="right">MODO LOCAL • TESTE NESTE COMPUTADOR</div></div></div>
-<header class="brandbar"><div class="wrap">
-  <a class="brand" href="index.html"><img src="assets/img/logo.png" alt="Corujão Notícias PB"><div><div class="brand-title">@CORUJAO<span>NOTICIASPB</span></div><div class="brand-tag">Informação em tempo real</div></div></a>
-  <div class="slogan">NOTÍCIA NÃO DORME.<br><strong>A GENTE TAMBÉM NÃO.</strong></div>
-  <form class="search" id="searchForm"><input id="searchInput" placeholder="O que você procura?"><button>⌕</button></form>
-</div></header>
-<nav class="nav"><div class="wrap"><button class="menu-btn" id="menuBtn">☰</button><div class="navlinks" id="navLinks">
-<a class="active" href="index.html">Início</a><a href="index.html?categoria=Pol%C3%ADcia">Polícia</a><a href="#agora">Ocorrências</a><a href="index.html?categoria=Cidades">Cidades</a><a href="index.html?categoria=Bairros">Bairros</a><a href="index.html?categoria=Pol%C3%ADtica">Política</a><a href="admin.html">Admin</a>
-</div></div></nav>
+  <main>
+    <div class="wrap">
+      <div class="ticker"><strong>⚡ ÚLTIMA HORA</strong><span id="tickerText">Carregando...</span><small id="tickerTime"></small></div>
+      <div class="hero-grid">
+        <article class="hero" id="hero"></article>
+        <aside class="side-stack" id="sideStack"></aside>
+      </div>
+    </div>
 
-<main><div class="wrap"><div class="notice notice-demo"><strong>Modo local:</strong> tudo que você publicar, editar, excluir ou receber pelo formulário ficará salvo apenas neste computador/navegador.</div><div class="ticker"><strong>⚡ ÚLTIMA HORA</strong><span id="tickerText">Carregando...</span><small id="tickerTime"></small></div><div class="hero-grid"><article class="hero" id="hero"></article><aside class="side-stack" id="sideStack"></aside></div></div>
-<section><div class="wrap"><div class="section-head"><h2 class="section-title">Principais Notícias</h2><a class="more" href="index.html">Ver todas →</a></div><div class="news-grid" id="newsGrid"></div></div></section>
-<section id="agora"><div class="wrap lower-grid"><div class="panel"><div class="section-head"><h2 class="section-title">Mais Lidas</h2></div><div class="ranking" id="ranking"></div></div><div class="panel"><div class="section-head"><h2 class="section-title live">Aconteceu Agora</h2></div><div class="live-list" id="liveList"></div></div></div></section>
-<section><div class="wrap"><div class="tipbox"><div><h3>📢 Enviar informação para a redação</h3><p>Para este teste local, o relato será armazenado neste computador e aparecerá no painel administrativo.</p><button class="btn btn-primary" id="openTip">ENVIAR INFORMAÇÃO</button></div><img src="assets/img/logo.png" alt=""></div></div></section>
-<section><div class="wrap"><div class="ad"><div><strong>📣 ANUNCIE CONOSCO</strong><p>Espaço reservado para publicidade.</p></div><button class="btn btn-primary">ENTRE EM CONTATO</button></div></div></section></main>
-<footer><div class="wrap footer-grid"><div><div class="brand"><img src="assets/img/logo.png"><div><div class="brand-title">@CORUJAO<span>NOTICIASPB</span></div><div class="brand-tag">Informação em tempo real</div></div></div><p class="hint">Versão local completa para testes.</p></div><div class="footer-links"><strong>Teste</strong><a href="admin.html">Painel administrativo</a><a href="#agora">Aconteceu Agora</a></div><div class="footer-links"><strong>Depois</strong><a href="#">Supabase</a><a href="#">Netlify</a></div></div><div class="wrap copyright">© 2026 Corujão Notícias PB • Ambiente local</div></footer>
-<div class="modal" id="tipModal"><div class="modal-card"><div class="modal-head"><h2>Enviar informação</h2><button class="close" id="closeTip">✕</button></div><form class="form-grid" id="tipForm"><div class="field"><label>Nome (opcional)</label><input name="name"></div><div class="field"><label>Telefone (opcional)</label><input name="phone"></div><div class="field"><label>Cidade</label><input name="city" required></div><div class="field"><label>Bairro</label><input name="neighborhood"></div><div class="field full"><label>Descrição</label><textarea name="description" required></textarea></div><div class="field"><label>Data</label><input type="date" name="event_date"></div><div class="field"><label>Horário</label><input type="time" name="event_time"></div><div class="field full"><label>Foto ou vídeo (até 12 MB)</label><input type="file" name="attachment" accept="image/*,video/*"></div><div class="field full"><label><input type="checkbox" name="keep_identity" value="1"> Desejo preservar minha identidade.</label></div><div class="field full"><button class="btn btn-primary">SALVAR INFORMAÇÃO LOCALMENTE</button></div></form></div></div>
-<script src="assets/js/local-db.js"></script><script src="assets/js/utils.js"></script><script src="assets/js/app.js"></script></body></html>
+    <section><div class="wrap">
+      <div class="section-head"><h2 class="section-title">Principais Notícias</h2><a class="more" href="index.html">Ver todas →</a></div>
+      <div class="news-grid" id="newsGrid"></div>
+    </div></section>
+
+    <section id="agora"><div class="wrap lower-grid">
+      <div class="panel"><div class="section-head"><h2 class="section-title">Mais Lidas</h2></div><div class="ranking" id="ranking"></div></div>
+      <div class="panel"><div class="section-head"><h2 class="section-title live">Aconteceu Agora</h2></div><div class="live-list" id="liveList"></div></div>
+    </div></section>
+
+    <section><div class="wrap"><div class="tipbox">
+      <div><h3>📢 Sua informação pode fazer a diferença</h3><p>Envie um relato para a equipe. O conteúdo poderá ser verificado antes de qualquer publicação.</p><button class="btn btn-primary" id="openTip">ENVIAR INFORMAÇÃO</button></div>
+      <img src="assets/img/logo.png" alt="">
+    </div></div></section>
+
+    <section><div class="wrap"><div class="ad"><div><strong>📣 ANUNCIE CONOSCO</strong><p>Sua marca em destaque no portal que informa a Paraíba.</p></div><button class="btn btn-primary">ENTRE EM CONTATO</button></div></div></section>
+  </main>
+
+  <footer id="rodape"><div class="wrap footer-grid">
+    <div><div class="brand"><img src="assets/img/logo.png" alt=""><div><div class="brand-title">@CORUJAO<span>NOTICIASPB</span></div><div class="brand-tag">Informação em tempo real</div></div></div><p class="hint">Portal local de notícias e informações da Paraíba.</p></div>
+    <div class="footer-links"><strong>Institucional</strong><a href="#">Quem Somos</a><a href="#">Política Editorial</a><a href="#">Política de Correções</a><a href="#">Direito de Resposta</a></div>
+    <div class="footer-links"><strong>Contato</strong><a href="#">Instagram</a><a href="#">WhatsApp</a><a href="#">Privacidade</a><a href="#">Anuncie Conosco</a><a href="admin.html">Área administrativa</a></div>
+  </div><div class="wrap copyright">© 2026 Corujão Notícias PB. Todos os direitos reservados.</div></footer>
+
+  <div class="modal" id="tipModal"><div class="modal-card">
+    <div class="modal-head"><h2>Enviar informação</h2><button class="close" id="closeTip">✕</button></div>
+    <p class="hint">As informações poderão passar por verificação antes da publicação. Para anexos de foto/vídeo, o projeto já está preparado para integração posterior via função segura.</p>
+    <form class="form-grid" id="tipForm">
+      <div class="field"><label>Nome (opcional)</label><input name="name"></div>
+      <div class="field"><label>Telefone (opcional)</label><input name="phone"></div>
+      <div class="field"><label>Cidade</label><input name="city" required></div>
+      <div class="field"><label>Bairro</label><input name="neighborhood"></div>
+      <div class="field full"><label>Descrição</label><textarea name="description" required></textarea></div>
+      <div class="field"><label>Data</label><input type="date" name="event_date"></div>
+      <div class="field"><label>Horário</label><input type="time" name="event_time"></div>
+      <div class="field full"><label><input type="checkbox" name="keep_identity" value="1"> Desejo preservar minha identidade.</label></div>
+      <div class="field full"><button class="btn btn-primary">ENVIAR</button></div>
+    </form>
+  </div></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/supabase-client.js"></script>
+  <script src="assets/js/utils.js"></script>
+  <script src="assets/js/app.js"></script>
+  <script>if("serviceWorker" in navigator){window.addEventListener("load",()=>navigator.serviceWorker.register("sw.js").catch(()=>{}));}</script>
+</body>
+</html>
