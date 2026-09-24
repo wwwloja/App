@@ -1,0 +1,15 @@
+{
+  "name": "BPMA Operações",
+  "short_name": "BPMA Operações",
+  "description": "Gestão de operações e emprego do efetivo do BPMA",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#f4f7f5",
+  "theme_color": "#123d2b",
+  "icons": [
+    {"src":"icon-192.png","sizes":"192x192","type":"image/png","purpose":"any maskable"},
+    {"src":"icon-512.png","sizes":"512x512","type":"image/png","purpose":"any maskable"}
+  ]
+}
